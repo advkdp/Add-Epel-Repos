@@ -1,0 +1,28 @@
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+To enable PowerTools
+sudo dnf config-manager --set-enabled PowerTools
+
+$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+To confirm epel repolist installed
+sudo rpm -ql epel-release
+
+
+To add repository in debian-ubuntu
+sudo add-apt-repository 'deb https://pkg.jenkins.io/debian-stable binary/'
+
+
+Update the list of packages which can be updated:
+
+sudo apt-get update -y
+Then install updates and then apply them by restarting the system:
+
+sudo apt-get upgrade -y && sudo shutdown -r now
+
+sudo apt update
+sudo apt -y install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates
+
+sudo add-apt-repository ppa:<PPA Name>
+exmaple
+sudo add-apt-repository ppa:ondrej/php
